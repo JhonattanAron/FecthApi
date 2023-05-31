@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        #cargadeImg{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #loader{
+            display: none;
+            position: none;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column align-items-center">
+    
+    <div class="card w-50 h-50 m-3">
+        <div class="card-body d-flex flex-column align-items-center ">
+            <label for="id" class="form-label">Ingresa un ID</label>
+            <input type="number" id="pokemonId" class="form-control">
+            <button class="btn btn-primary m-2" id="btnBuscar">Buscar</button>
+            <div id="cargadeImg" class="card w-75 h-75">
+                <div id="loader" class="spinner-border text-primary" role="status">
+                    <span class="sr-only"></span>
+                  </div>
+                <img class="w-100 h-100" id="pokemon" src="img/img1.webp" alt="pokemon">
+            </div>
+            <h5>Nombre: <strong id="nombre"></strong></h5>
+            <h5>Habilidades: <strong id="poder"></strong></h5>
+        </div>
+    </div>
+    <script src="destructuracion.js"></script>
+</body>
+</html>
